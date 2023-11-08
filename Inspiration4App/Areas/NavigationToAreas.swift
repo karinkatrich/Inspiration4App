@@ -26,7 +26,7 @@ struct NavigationToAreas: View {
                             CrewArea()
                         }
                         else if area == Area.equipment {
-
+                            EquipmentArea()
                         }
                         else if area == Area.mission {
 
