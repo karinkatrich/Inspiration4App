@@ -10,6 +10,7 @@ import Foundation
 enum Crew: String, Identifiable, CaseIterable, Equatable {
     case jared, hayley, chris, sian
     var id: Self { self }
+    var name: String { rawValue.lowercased() }
 
     var fullName: String {
         switch self {

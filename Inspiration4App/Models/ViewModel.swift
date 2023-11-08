@@ -6,11 +6,17 @@
 //
 
 import Foundation
-//import Observation
 
-//@Observable
-class ViewModel {
-    var navigationPath: [Area] = []
-    var isShowingRocketCapsule: Bool = false
-    var isShowingFullRocketCapsule: Bool = false
+@Observable
+class ViewModel
+{
+    var navigationPath : [Area] = []
+    var isShowingRocketCapsule : Bool = false
+    var isShowingFullRocket : Bool = false
+    var isShowingMixedRocket : Bool = false
+
+    var capsuleRealityAreaId: String = "CapsuleRealityArea"
+    var fullRocketRealityArea: String = "FullRocketRealityArea"
+    var mixedRocketRealityArea: String = "MixedRocketRealityArea"
 }
+

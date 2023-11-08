@@ -21,13 +21,30 @@ struct NavigationToAreas: View {
                         Text(area.title)
                             .monospaced()
                             .font(.system(size: 40, weight: .bold))
+
+                        if area == Area.astronauts {
+                            CrewArea()
+                        }
+                        else if area == Area.equipment {
+
+                        }
+                        else if area == Area.mission {
+
+                        }
+
+                        Spacer()
                     } label: {
                         Label(area.name, systemImage: "chevron.right")
                             .monospaced()
                             .font(.title)
                     }
+                    .controlSize(.extraLarge)
                 }
             }
+        }
+        .background()
+        {
+            Image("Inspiration4")
         }
     }
 }
